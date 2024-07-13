@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roscenes"
+authors = [
+    {name = "Xiaosu Zhu", email = "zhuxiaosu.zxs@alibaba-inc.com"},
+]
+version = "0.0.1"
+description = "RoScenes dataset devkit"
+readme = "README.md"
+license = { text="Apache 2.0" }
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "lmdb<2",
+    "packaging",
+    "numpy<2",
+    "shapely<3",
+    "dashtable",
+    "rich",
+    "scipy<2",
+    "click",
+    "joblib",
+    "pyyaml",
+    "opencv-python-headless",
+    "scikit-learn",
+    "matplotlib",
+    "bs4"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
