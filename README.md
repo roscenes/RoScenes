@@ -17,12 +17,12 @@
     <img src="https://img.shields.io/github/stars/roscenes/RoScenes?logo=github&style=for-the-badge" alt="Github stars" height="24em"/>
   </a>
 
-  <a href="https://github.com/roscenes/RoScenes/network/members" target="_blank" width="15%">
-    <img src="https://img.shields.io/github/forks/roscenes/RoScenes?logo=github&style=for-the-badge" alt="Github forks" height="24em"/>
+  <a href="https://roscenes.github.io" target="_blank" width="15%">
+    <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=000000&color=ff6a00" alt="Project" height="24em"/>
   </a>
 
-  <a href="https://github.com/roscenes/RoScenes/blob/main/LICENSE" target="_blank" width="15%">
-    <img src="https://img.shields.io/github/license/roscenes/RoScenes?logo=github&style=for-the-badge" alt="Github license" height="24em"/>
+  <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes" target="_blank" width="15%">
+    <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=000000&color=ff6a00" alt="Download" height="24em"/>
   </a>
 </p>
 
@@ -30,6 +30,8 @@
 <br/>
 
 ## 📰 Release Note
+
+**[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes).
 
 **[2024-07-13]** Devkit for RoScenes released.
 
@@ -58,11 +60,15 @@
 * [📈 Evaluation](#-evaluation)
 * [🎯 To-do List](#-to-do-list)
 
+> [!IMPORTANT]
+> Commercial use of RoScenes is strictly forbidden.
 
 ## 🔥 Quick Start
 
 ### Download
-***Please stay tuned!***
+
+> [!NOTE]
+> Please refer to [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes) for downloading the dataset.
 
 After download and extract, the dataset folder should be organized as follows:
 
@@ -154,7 +160,6 @@ for frame in dataset:
 
 > [!IMPORTANT]
 > Please refer to [`frame.py`](roscenes/data/frame.py), [`camera.py`](roscenes/data/camera.py) for the detailed comments on box format, instrinsic and extrinsic definition, etc.
-
 
 
 ## 🔎 Explore the Dataset
