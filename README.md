@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=000000&color=ff6a00" alt="Project" height="24em"/>
   </a>
 
-  <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-Dataset" target="_blank" width="15%">
+  <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release" target="_blank" width="15%">
     <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=000000&color=ff6a00" alt="Download" height="24em"/>
   </a>
 </p>
@@ -31,7 +31,7 @@
 
 ## 📰 Release Note
 
-**[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-Dataset).
+**[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release).
 
 **[2024-07-13]** Devkit for RoScenes released.
 
@@ -68,7 +68,7 @@
 ### Download
 
 > [!NOTE]
-> Please refer to [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-Dataset) for downloading the dataset.
+> Please refer to [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release) for downloading the dataset.
 
 After download and extract, the dataset folder should be organized as follows:
 

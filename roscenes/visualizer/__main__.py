@@ -21,12 +21,8 @@ import os
 import cv2
 import seaborn as sns
 import numpy as np
-from matplotlib import pyplot as plt
 from PIL import Image
 from shapely.geometry import Polygon
-from pillow_heif import register_heif_opener
-
-register_heif_opener()
 
 from roscenes.typing import StrPath
 from roscenes.data.scene import Scene
@@ -135,6 +131,9 @@ class Visualizer:
             frames = [frames]
         result = self._visualize(frames, )
         return result
+
+    def __len__(self):
+        return len(self.scene)
 
 
 if __name__ == "__main__":

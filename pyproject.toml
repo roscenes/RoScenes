@@ -21,16 +21,16 @@ dependencies = [
     "packaging",
     "numpy<2",
     "shapely<3",
-    "dashtable",
-    "rich",
+    "dashtable<2",
+    "rich<14",
     "scipy<2",
-    "click",
-    "joblib",
-    "pyyaml",
-    "opencv-python-headless",
-    "scikit-learn",
-    "matplotlib",
-    "bs4"
+    "click<9",
+    "joblib<2",
+    "pyyaml<7",
+    "opencv-python-headless<5",
+    "matplotlib<4",
+    "bs4<0.1",
+    "seaborn<1"
 ]
 
 [tool.setuptools.packages.find]

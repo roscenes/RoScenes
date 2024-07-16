@@ -145,8 +145,6 @@ class Scene:
 class ConcatScene:
     scenes: list[Scene]
 
-    clips: list[Clip] = field(init=False)
-
     # [N, 3], scene idx, clip idx, offset
     _indexing: np.ndarray = field(init=False)
 
@@ -170,13 +168,14 @@ class ConcatScene:
         indexing = np.concatenate([x._indexing for x in self.scenes], 0)
         # [N, 3]
         indexing = np.concatenate([np.concatenate([np.full([len(x), 1], i, dtype=np.int64) for i, x in enumerate(self.scenes)]), indexing], -1)
+        self._indexing = indexing
         logger.info('ConcatScene created of total frames: %s.', len(self))
 
     def __getitem__(self, idx: Indexing) -> Frame | list(Frame):
         # normal indexing
         if isinstance(idx, int):
             sceneIdx, clipIdx, offset = self._indexing[idx]
-            return self.scenes[sceneIdx][clipIdx][offset]
+            return self.scenes[sceneIdx].clips[clipIdx][offset]
 
         # slice or iterable indexing returns list of frames
         indices = self._indexing[idx]
