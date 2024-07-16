@@ -29,6 +29,9 @@
 <br/>
 <br/>
 
+> [!CAUTION]
+> **Commercial use of RoScenes is strictly forbidden.**
+
 ## 📰 Release Note
 
 **[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release).
@@ -59,9 +62,6 @@
 * [👩‍💻 Examples](#-examples)
 * [📈 Evaluation](#-evaluation)
 * [🎯 To-do List](#-to-do-list)
-
-> [!IMPORTANT]
-> Commercial use of RoScenes is strictly forbidden.
 
 ## 🔥 Quick Start
 
