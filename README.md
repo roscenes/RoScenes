@@ -13,10 +13,6 @@
     <img src="https://img.shields.io/badge/arXiv-2405.09883-b31b1b?style=for-the-badge&logo=arxiv&labelColor=630b0b" alt="arXiv" height="24em"/>
   </a>
 
-  <a href="https://github.com/roscenes/RoScenes/stargazers" target="_blank" width="15%">
-    <img src="https://img.shields.io/github/stars/roscenes/RoScenes?logo=github&style=for-the-badge" alt="Github stars" height="24em"/>
-  </a>
-
   <a href="https://roscenes.github.io" target="_blank" width="15%">
     <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=000000&color=ff6a00" alt="Project" height="24em"/>
   </a>
@@ -24,6 +20,11 @@
   <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release" target="_blank" width="15%">
     <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=000000&color=ff6a00" alt="Download" height="24em"/>
   </a>
+  
+  <a href="https://pypi.org/project/roscenes/" target="_blank" width="15%">
+    <img src="https://img.shields.io/badge/roscenes-blue?style=for-the-badge&label=pypi&labelColor=000000&color=ff6a00" alt="PyPI package" height="24em"/>
+  </a>
+
 </p>
 
 <br/>
