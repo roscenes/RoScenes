@@ -16,4 +16,4 @@ To use it, you need to declare with key in the training or evaluation configs. A
 ## Evaluation
 An evaluation code is delivered together with `roscenes_dataset.py`. You can find it in `RoSceneDataset.evaluate()` function.
 
-A detailed guide for performing evaluation is placed under [`roscenes/evaluation/README.md`](roscenes/evaluation/README.md).
+A detailed guide for performing evaluation is placed under [`roscenes/evaluation/README.md`](/roscenes/evaluation/README.md).
