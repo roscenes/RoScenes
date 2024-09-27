@@ -13,25 +13,29 @@
     <img src="https://img.shields.io/badge/arXiv-2405.09883-b31b1b?style=for-the-badge&logo=arxiv&labelColor=630b0b" alt="arXiv" height="24em"/>
   </a>
 
-  <a href="https://github.com/roscenes/RoScenes/stargazers" target="_blank" width="15%">
-    <img src="https://img.shields.io/github/stars/roscenes/RoScenes?logo=github&style=for-the-badge" alt="Github stars" height="24em"/>
-  </a>
-
   <a href="https://roscenes.github.io" target="_blank" width="15%">
     <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=505050&color=ff6a00" alt="Project" height="24em"/>
   </a>
 
-  <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes" target="_blank" width="15%">
-    <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=505050&color=ff6a00" alt="Download" height="24em"/>
+  <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release" target="_blank" width="15%">
+    <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=000000&color=ff6a00" alt="Download" height="24em"/>
   </a>
+
+  <a href="https://pypi.org/project/roscenes/" target="_blank" width="15%">
+    <img src="https://img.shields.io/badge/roscenes-blue?style=for-the-badge&label=pypi&labelColor=000000&color=ff6a00" alt="PyPI package" height="24em"/>
+  </a>
+
 </p>
 
 <br/>
 <br/>
 
+> [!CAUTION]
+> **Commercial use of RoScenes is strictly forbidden.**
+
 ## 📰 Release Note
 
-**[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes).
+**[2024-07-14]** You can now download the dataset at [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release).
 
 **[2024-07-13]** Devkit for RoScenes released.
 
@@ -60,15 +64,12 @@
 * [📈 Evaluation](#-evaluation)
 * [🎯 To-do List](#-to-do-list)
 
-> [!IMPORTANT]
-> Commercial use of RoScenes is strictly forbidden.
-
 ## 🔥 Quick Start
 
 ### Download
 
 > [!NOTE]
-> Please refer to [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes) for downloading the dataset.
+> Please refer to [ModelScope](https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes-release) for downloading the dataset.
 
 After download and extract, the dataset folder should be organized as follows:
 
@@ -190,26 +191,3 @@ Unfortunately, since the code is built from scratch, our evaluation suite can no
 - [x] Example dataset loader based on [`MMDetection3D`](https://github.com/open-mmlab/mmdetection3d)
 - [x] 3D detection task and evaluation suite
 - [ ] 3D tracking task and evaluation suite
-
-<br/>
-<br/>
-<p align="center">
-<b>
-This repo is licensed under
-</b>
-</p>
-<p align="center">
-<a href="https://www.apache.org/licenses/LICENSE-2.0#gh-light-mode-only" target="_blank">
-  <img src="https://github.com/roscenes/RoScenes/blob/main/assets/ASF_Logo-light.svg#gh-light-mode-only" alt="The Apache Software Foundation" title="The Apache Software Foundation" width="200px"/>
-</a>
-
-<a href="https://www.apache.org/licenses/LICENSE-2.0#gh-dark-mode-only" width="15%">
-  <img src="https://github.com/roscenes/RoScenes/blob/main/assets/ASF_Logo-dark.svg#gh-dark-mode-only" alt="The Apache Software Foundation" title="The Apache Software Foundation" width="200px"/>
-  </a>
-</p>
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/roscenes/RoScenes/main/LICENSE">
-  <b>Apache License<br/>Version 2.0</b>
-</a>
-</p>
