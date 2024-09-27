@@ -23,10 +23,10 @@ import numpy.typing as npt
 class Prediction:
     timeStamp: int
     boxes3D: npt.NDArray[np.float64]
+    velocities: npt.NDArray[np.float64]
     labels: npt.NDArray[np.float64]
     scores: npt.NDArray[np.float64]
     token: str
-    velocities: npt.NDArray[np.float64]
 
     def sort(self, maxPredictionPerSample: int):
         """Sort boxes by score."""

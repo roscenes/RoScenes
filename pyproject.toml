@@ -28,7 +28,6 @@ dependencies = [
     "joblib",
     "pyyaml",
     "opencv-python-headless",
-    "scikit-learn",
     "matplotlib",
     "bs4"
 ]

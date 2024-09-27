@@ -18,11 +18,11 @@
   </a>
 
   <a href="https://roscenes.github.io" target="_blank" width="15%">
-    <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=000000&color=ff6a00" alt="Project" height="24em"/>
+    <img src="https://img.shields.io/badge/Page-blue?style=for-the-badge&label=Project&labelColor=505050&color=ff6a00" alt="Project" height="24em"/>
   </a>
 
   <a href="https://modelscope.cn/datasets/Apsara_Lab_Multimodal_Intelligence/RoScenes" target="_blank" width="15%">
-    <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=000000&color=ff6a00" alt="Download" height="24em"/>
+    <img src="https://img.shields.io/badge/Download-blue?style=for-the-badge&label=ModelScope&labelColor=505050&color=ff6a00" alt="Download" height="24em"/>
   </a>
 </p>
 
@@ -166,22 +166,28 @@ for frame in dataset:
 
 `python -m roscenes.visualizer [DATA_ROOT]/train/s001_split_train_difficulty_mixed_ambience_day 0 vis_result`
 
-TBD.
-
 ## 👩‍💻 Examples
 
-* **1. Read all boxes in a frame, and convert them from global 3D coordinates to camera's perspective coordinates.**
+A example in companion with `mmdet3d` is given in [`examples`](examples).
+
+Please go to that folder README.md for details.
 
 
 ## 📈 Evaluation
 
-TBD.
+Note that we use nuScenes detection score (NDS) to evaluate performance. Additionally, we provide an optimized implementation of NDS which could significantly speed-up calculation. It should produce identical result with the official [NDS](https://github.com/nutonomy/nuscenes-devkit) under same inputs. Benchmark is shown below:
+
+| Input frames | Boxes/Frame | Original | Ours |
+|--------------|-------------|----------|------|
+| 360          | 109         | 1697s    | 118s |
+
+Unfortunately, since the code is built from scratch, our evaluation suite can not be an in-place implementation to the original one ---- You need to modify the code. To take evaluation, please refer to the example given in [`examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py`](examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py) and the README file in [`roscenes/evaluation/README.md`](roscenes/evaluation/README.md).
 
 
 ## 🎯 To-do List
 - [x] Devkit release
 - [x] Dataset release
-- [ ] Example dataset loader based on [`MMDetection3D`](https://github.com/open-mmlab/mmdetection3d)
+- [x] Example dataset loader based on [`MMDetection3D`](https://github.com/open-mmlab/mmdetection3d)
 - [x] 3D detection task and evaluation suite
 - [ ] 3D tracking task and evaluation suite
 

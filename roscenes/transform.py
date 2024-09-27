@@ -190,6 +190,9 @@ def corners2kitti(corners3d: np.ndarray) -> np.ndarray:
     return xyzwlhq2kitti(corners2xyzwlhq(corners3d))
 
 def kitti2xyzwlhq(kitti: np.ndarray) -> np.ndarray:
+    """
+    See `xyzwlhq2kitti`, this is the reverse transform.
+    """
     xyzwlhr = kitti[:, :7].copy()
     yaws = xyzwlhr[:, 6:].copy()
     # See xyzwlhq2kitti
