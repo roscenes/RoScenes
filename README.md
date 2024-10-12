@@ -178,11 +178,11 @@ Please go to that folder README.md for details.
 
 Note that we use nuScenes detection score (NDS) to evaluate performance. Additionally, we provide an optimized implementation of NDS which could significantly speed-up calculation. It should produce identical result with the official [NDS](https://github.com/nutonomy/nuscenes-devkit) under same inputs. Benchmark is shown below:
 
-| Input frames | Boxes/Frame | Original | Ours |
+| Input frames | Boxes/Frame | Original nuScenes devkit | Ours |
 |--------------|-------------|----------|------|
 | 360          | 109         | 1697s    | 118s |
 
-Unfortunately, since the code is built from scratch, our evaluation suite can not be an in-place implementation to the original one ---- You need to modify the code. To take evaluation, please refer to the example given in [`examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py`](examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py) and the README file in [`roscenes/evaluation/README.md`](roscenes/evaluation/README.md).
+Unfortunately, since the code is built from scratch, our evaluation suite can not be an in-place replacement to the original one ---- You need to modify the code. To take evaluation, please refer to the example given in [`examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py`](examples/mmdet3d/mmdet3d_plugin/datasets/roscenes_dataset.py) and the README file in [`roscenes/evaluation/README.md`](roscenes/evaluation/README.md).
 
 
 ## 🎯 To-do List
