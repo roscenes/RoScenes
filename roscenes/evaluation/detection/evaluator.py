@@ -37,7 +37,7 @@ class MultiView3DEvaluator:
         if config.thresholdMetric == ThresholdMetric.IOU:
             raise NotImplementedError
         self.config = config
-        self.handlers = config.createHandlers()
+        self.handlers = config._handlerInstances
         self._labelIDMapping = {c: i for i, c in enumerate(self.config.classes)}
         self.progress = richProgress
 
