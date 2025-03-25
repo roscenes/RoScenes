@@ -165,7 +165,7 @@ for frame in dataset:
 
 ## 🔎 Explore the Dataset
 
-`python -m roscenes.visualizer [DATA_ROOT]/train/s001_split_train_difficulty_mixed_ambience_day 0 vis_result`
+`python -m roscenes.visualizer [DATA_ROOT]/train/s001_split_train_difficulty_mixed_ambience_day vis_result 0`
 
 ## 👩‍💻 Examples
 
